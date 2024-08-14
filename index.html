@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Modular-Cam: Modular Dynamic Camera-view Video Generation with LLM</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,26 +52,26 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Modular-Cam: Modular Dynamic Camera-view Video Generation with LLM</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
+              <!-- <span class="author-block"> -->
+                <p>AAAI 2025 Anonymous Authors</p></span>
+                <!-- <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                  </span> -->
+                  <!-- </div> -->
 
-                  <div class="is-size-5 publication-authors">
+                  <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                  </div> -->
 
-                  <div class="column has-text-centered">
+                  <!-- <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         Arxiv PDF link
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -82,8 +82,8 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    Supplementary PDF link -->
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -93,8 +93,8 @@
                     </a>
                   </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
+                  Github link -->
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,10 +102,10 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,10 +113,10 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
-            </div>
-          </div>
-        </div>
+              </span> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -124,11 +124,11 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+        Your video here
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,7 +137,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Text-to-Video generation, which utilizes the provided text prompt to generate high-quality videos, has drawn increasing attention and achieved great success due to the development of diffusion models recently. Existing methods mainly rely on a pre-trained text encoder to capture the semantic information and perform cross attention with the encoded text prompt to guide the generation of video. However, when it comes to complex prompts that contain dynamic scenes and multiple camera-view transformations, these methods can hardly decompose the information of different scenes and fail to change the scene with the corresponding camera-view smoothly. To solve the above problems, we propose a novel method called Modular-Cam. Specifically, to better understand the provided complex prompt, we utilize a large language model to analyze user instructions and decouple them into multiple scenes and transition actions. To generate the video of dynamic scenes that matches the given camera-view, we adopt widely-used temporal transformer into the diffusion model to ensure continuity within a single scene, and propose a CamOperator based on modular network that finely controls the camera movement. Additionally, we propose AdaControlNet, which utilizes ControlNet to ensure consistency across scenes and adaptively adjusts the color tone of the generated video. Extensive qualitative and quantitative experiments prove our proposed Modular-Cam's strong capability of generating multi-scene videos together with its ability to achieve fine-grained control of camera movements.
           </p>
         </div>
       </div>
@@ -157,99 +157,160 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Method</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="content has-text-justified">
+            <img src="static/images/framework.png">
+          </br></br></br></br>
+            <p>
+              In this work, we present a novel Modular-Cam framework to address the aforementioned problems. Specifically, to provide a deep understanding of the user instructions, we propose an LLM-Director which utilizes a large language model (LLM) to analyze the instructions and decompose them into multiple scenes and transition actions. The obtained disentangled information is crucial for the generation of individual scenes and entire videos. Based on T2I diffusion models, we conduct a base video generator by inserting temporal transformer layers, transferring information across frames, and maintaining the continuity of the generated video within a single scene. We further propose a CamOperator module, which is a series of LoRA layers added on the base generator to ensure fine-grained control of the camera movements. For each motion pattern, i.e., ZoomIn, PanLeft, etc., a corresponding CamOperator module is trained. LLM will select which CamOperator module to use from the operation pool based on the transition action it acquires. </br></br>
+              Besides, these CamOperators can function as modular components. For complex camera view transformations, it is not necessary to retrain each of the CamOperators but rather utilize the existing modular operators to combine them. Benefitting from the modularity, we can easily plug them in at different situations, which greatly enhances the scalability of the model. To improve the consistency across multiple scenes, we adopt an autoregressive method and propose AdaControlNet, which introduces the ending frame of the last scene as the control information for the generation of the current scene and adaptively adjusts the color tone of the videos. Consequently, guided by the last scene, the transition between adjacent scenes will be smooth. We concatenate the video clips for each scene sequentially, deriving the final multi-scene dynamic camera-view video, which completes the end-to-end procedure.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
+<!-- 
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
+      Paper video.
+      <h2 class="title is-3">Results</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="content has-text-justified">
+            <img src="static/images/framework.png">
+            <p>
+              Results
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Video carousel -->
+
+<section class="hero is-small is-light">
+  <!-- <div class="container is-max-desktop content"> -->
+    
+    <!-- <section class="hero method">
+    <div class="container is-max-desktop"> -->
+    <div class="hero-body">
+      <div class="container">
+      <h2 class="title is-3">Results</h2>
+
+    <!-- <h3 class="title">1200 FRAMES @ 2 MINUTES</h3> -->
+    <table class="center">
+      <tbody><tr><td></td><td></td><td></td><td></td></tr>
+      <tr>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/beach.mp4" controls=""></video></td>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/city.mp4" controls=""></video></td>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/cliff.mp4" controls=""></video></td>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/desert.mp4" controls=""></video></td>
+      </tr>
+      <tr>
+        <td width="25%" style="text-align:center;">"Beginning
+          with a beach scene, the camera gradually <b>draws in</b> closer
+          as waves lap against the reef. Then the camera slowly <b>pans
+          right</b> and a large area of sea is revealed."</td>
+        <td width="25%" style="text-align:center;">"Beginning with a view of a modern city street, the camera gradually <b>moves back</b>, with the houses on both sides moving back too. Finally, the camera <b>lifts up</b> and gives a shot of the blue sky."</td>
+        <td width="25%" style="text-align:center;">"Starting with a close up shot of the flowers in the meadow, the camera slowly <b>moves to the right</b> to focus on the mountain peaks in the distance and gradually <b>draws in closer</b>. The camera then continues to <b>move to the right</b> as the mountain and the lake mirror each other."</td>
+        <td width="25%" style="text-align:center;">"The camera <b>pans left</b> to reveal a large area of desert, then the camera <b>advances</b> to give a better view of the dunes in the distance. Finally, the camera <b>tilts down</b> to focus on the sand at the feet."</td>
+      </tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </tbody></table>
+  </br></br></br>
+    <table class="center">
+      <tbody><tr><td></td><td></td><td></td><td></td></tr>
+      <tr>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/field.mp4" controls=""></video></td>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/ocean.mp4" controls=""></video></td>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/rabbit.mp4" controls=""></video></td>
+        <td width="25%" style="text-align:center;"><video src="static/videos/mp4s/window.mp4" controls=""></video></td>
+      </tr>
+      <tr>
+        <td width="25%" style="text-align:center;">"Starting with a distant shot of a field with blue skies, the camera gradually <b>focuses on</b> a house in the distance. The camera then gradually <b>pans left</b> to reveal a large field and the house moves out of view."</td>
+        <td width="25%" style="text-align:center;">"Starting in a submarine world, the camera slowly <b>moves left</b> to reveal a variey of marine life. Then the camera <b>moves forward</b>, aiming at a large area of water plants in the distance."</td>
+        <td width="25%" style="text-align:center;">"The camera gradually <b>zooms in</b> to focus on a running rabbit on the grassland. Then the camera <b>pans left</b> to give a panoramic shot, while the rabbit stops moving."</td>
+        <td width="25%" style="text-align:center;">"Starting with an indoor shot, the camera <b>moves left</b> to reveal a big window. Then the camera gradually <b>moves in</b>, focusing on the trees outside."</td>
+      </tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </tbody></table>
+
+  </div>
+</div>
+<!-- </div></section> -->
+  <!-- </div> -->
+</section>
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <table class="center">
+      <tbody><tr><td></td><td></td><td></td><td></td></tr>
+      <tr>
+        <td><video src="static/videos/carousel1.mp4" controls=""></video></td>
+        <td><video src="static/videos/carousel1.mp4" controls=""></video></td>
+        <td><video src="static/videos/carousel1.mp4" controls=""></video></td>
+        <td><video src="static/videos/carousel1.mp4" controls=""></video></td>
+      </tr>
+      <tr>
+        <td width="25%" style="text-align:center;">"Explore the coral gardens of the sea..."</td>
+        <td width="25%" style="text-align:center;">"Camera moving in a wide bright ice cave."</td>
+        <td width="25%" style="text-align:center;">"Experience the dance of jellyfish..."</td>
+        <td width="25%" style="text-align:center;">"Wide shot of battlefield, stormtroopers running..."</td>
+      </tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </tbody></table> -->
+    <!-- <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+          <div class="content has-text-justified">
+            <img src="static/images/framework.png">
+            <p>
+              Results
+            </p>
+          </div>
+          <video poster="abcde" id="video1" autoplay controls muted loop height="10%">
+            <span><p>video 1</p></span>
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
+        </span>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+          <div class="content has-text-justified">
+            <img src="static/images/framework.png">
+            <p>
+              Results
+            </p>
+          </div>
+          <video poster="fghjj" id="video2" autoplay controls muted loop height="10%">
+            <p>video 2</p>
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+            <p>video 3</p>
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- End video carousel -->
@@ -260,7 +321,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,17 +331,17 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
