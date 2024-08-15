@@ -167,7 +167,7 @@
           <h2 class="title is-3">Method</h2>
           
           <div class="content has-text-justified">
-            <img src="static/images/framework.png">
+            <img src="static/images/framework.jpg">
           </br></br></br></br>
             <p>
               In this work, we present a novel Modular-Cam framework to address the aforementioned problems. Specifically, to provide a deep understanding of the user instructions, we propose an LLM-Director which utilizes a large language model (LLM) to analyze the instructions and decompose them into multiple scenes and transition actions. The obtained disentangled information is crucial for the generation of individual scenes and entire videos. Based on T2I diffusion models, we conduct a base video generator by inserting temporal transformer layers, transferring information across frames, and maintaining the continuity of the generated video within a single scene. We further propose a CamOperator module, which is a series of LoRA layers added on the base generator to ensure fine-grained control of the camera movements. For each motion pattern, i.e., ZoomIn, PanLeft, etc., a corresponding CamOperator module is trained. LLM will select which CamOperator module to use from the operation pool based on the transition action it acquires. </br></br>
