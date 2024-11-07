@@ -257,6 +257,21 @@
   <!-- </div> -->
 </section>
 
+<section class="section hero is-light"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">More Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-to-Video generation, which utilizes the provided text prompt to generate high-quality videos, has drawn increasing attention and achieved great success due to the development of diffusion models recently. Existing methods mainly rely on a pre-trained text encoder to capture the semantic information and perform cross attention with the encoded text prompt to guide the generation of video. However, when it comes to complex prompts that contain dynamic scenes and multiple camera-view transformations, these methods can hardly decompose the information of different scenes and fail to change the scene with the corresponding camera-view smoothly. To solve the above problems, we propose a novel method called Modular-Cam. Specifically, to better understand the provided complex prompt, we utilize a large language model to analyze user instructions and decouple them into multiple scenes and transition actions. To generate the video of dynamic scenes that matches the given camera-view, we adopt widely-used temporal transformer into the diffusion model to ensure continuity within a single scene, and propose a CamOperator based on modular network that finely controls the camera movement. Additionally, we propose AdaControlNet, which utilizes ControlNet to ensure consistency across scenes and adaptively adjusts the color tone of the generated video. Extensive qualitative and quantitative experiments prove our proposed Modular-Cam's strong capability of generating multi-scene videos together with its ability to achieve fine-grained control of camera movements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- <section class="hero is-small">
   <div class="hero-body">
     <table class="center">
