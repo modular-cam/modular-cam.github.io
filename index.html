@@ -203,16 +203,11 @@
 <!-- Video carousel -->
 
 <section class="hero is-small is-light">
-  <!-- <div class="container is-max-desktop content"> -->
-    
-    <!-- <section class="hero method">
-    <div class="container is-max-desktop"> -->
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
       <div class="container">
       <h2 class="title is-3">Results</h2>
 
-    <!-- <h3 class="title">1200 FRAMES @ 2 MINUTES</h3> -->
     <table class="center">
       <tbody><tr><td></td><td></td><td></td><td></td></tr>
       <tr>
@@ -253,29 +248,104 @@
   </div>
 </div>
 </div>
-<!-- </div></section> -->
-  <!-- </div> -->
 </section>
 
-<section class="section hero is-light"></section>
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">More Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            Text-to-Video generation, which utilizes the provided text prompt to generate high-quality videos, has drawn increasing attention and achieved great success due to the development of diffusion models recently. Existing methods mainly rely on a pre-trained text encoder to capture the semantic information and perform cross attention with the encoded text prompt to guide the generation of video. However, when it comes to complex prompts that contain dynamic scenes and multiple camera-view transformations, these methods can hardly decompose the information of different scenes and fail to change the scene with the corresponding camera-view smoothly. To solve the above problems, we propose a novel method called Modular-Cam. Specifically, to better understand the provided complex prompt, we utilize a large language model to analyze user instructions and decouple them into multiple scenes and transition actions. To generate the video of dynamic scenes that matches the given camera-view, we adopt widely-used temporal transformer into the diffusion model to ensure continuity within a single scene, and propose a CamOperator based on modular network that finely controls the camera movement. Additionally, we propose AdaControlNet, which utilizes ControlNet to ensure consistency across scenes and adaptively adjusts the color tone of the generated video. Extensive qualitative and quantitative experiments prove our proposed Modular-Cam's strong capability of generating multi-scene videos together with its ability to achieve fine-grained control of camera movements.
-          </p>
-        </div>
-      </div>
-    </div>
+
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+      <div class="container">
+      <h2 class="title is-3">Generated samples with multiple camera-views combined</h2>
+
+    <table class="center">
+      <tbody><tr><td></td><td></td></tr>
+      <tr>
+        <td width="50%" style="text-align:center;"><video src="static/videos/rebuttal/multi-1.mp4" controls=""></video></td>
+        <td width="50%" style="text-align:center;"><video src="static/videos/rebuttal/multi-2.mp4" controls=""></video></td>
+      </tr>
+      <tr>
+        <td width="50%" style="text-align:center;">"As the camera moves to the left, a house comes into view, followed by a large field. At the same time, the camera gradually moves forward."</br><i>ZoomIn</i> and <i>PanLeft</i> combined</td>
+        <td width="50%" style="text-align:center;">"The camera moves to the right and skims over a large beach. Then the camera gradually moves forward and tilts down to focus on the sea."</br><i>ZoomIn</i> and <i>TiltDown</i> conbined</td>
+      </tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </tbody></table>
+
   </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+    <div class="container">
+    <h2 class="title is-3">More results with respect to daily-life environments</h2>
+
+  <table class="center">
+    <tbody><tr><td></td><td></td></tr>
+    <tr>
+      <td width="50%" style="text-align:center;"><video src="static/videos/rebuttal/dl-1.mp4" controls=""></video></td>
+      <td width="50%" style="text-align:center;"><video src="static/videos/rebuttal/dl-2.mp4" controls=""></video></td>
+    </tr>
+    <tr>
+      <td width="50%" style="text-align:center;">"Starting with a scene of a fish tank in a living room. The camera gradually zooms in to focus on the fish in the tank."</td>
+      <td width="50%" style="text-align:center;">"Two people are chatting on the bench. The camera gradually moves backward, revealing a park filled with trees."</td>
+    </tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </tbody></table>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small is"></section>
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+    <div class="container">
+    <h2 class="title is-3">Visual Comparison between Modular-Cam and MotionCtrl, CameraCtrl</h2>
+  <p>Starting with a distant shot of a field with blue sky, the camera gradually <b>focuses on</b> a house in the distance.</br> The camera then gradually <b>pans right</b> to reveal a large field and the house moves out of view.</p>
+  <table class="center">
+    <tbody><tr><td></td><td></td><td></td></tr>
+    <tr>
+      <td width="30%" style="text-align:center;"><video src="static/videos/mp4s/field_new.mp4" controls=""></video></td>
+      <td width="30%"  style="text-align:center;"><video src="static/videos/rebuttal/MotionCtrl-2.mp4" controls=""></video></td>
+      <td width="30%" style="text-align:center;"><video src="static/videos/rebuttal/CameraCtrl-2.mp4" controls=""></video></td>
+    </tr>
+    <tr>
+      <td width="30%" style="text-align:center;">Modular-Cam generated results.</td>
+      <td width="30%" style="text-align:center;">MotionCtrl generated results.</td>
+      <td width="30%" style="text-align:center;">CameraCtrl generated results.</td>
+    </tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </tbody></table>
+</br></br></br>
+  <p>Starting with a close up shot of the flowers in the meadow, the camera slowly <b>moves to the right</b> to focus on the mountain peaks in the distance and gradually <b>draws in closer</b>.</br> The camera then continues to <b>move to the right</b> as the mountain and the lake mirror each other.</p>
+  <table class="center">
+    <tbody><tr><td></td><td></td><td></td></tr>
+    <tr>
+      <td width="30%" style="text-align:center;"><video src="static/videos/mp4s/cliff.mp4" controls=""></video></td>
+      <td width="30%"  style="text-align:center;"><video src="static/videos/rebuttal/MotionCtrl-1.mp4" controls=""></video></td>
+      <td width="30%" style="text-align:center;"><video src="static/videos/rebuttal/CameraCtrl-1.mp4" controls=""></video></td>
+    </tr>
+    <tr>
+      <td width="30%" style="text-align:center;">Modular-Cam generated results.</td>
+      <td width="30%" style="text-align:center;">MotionCtrl generated results.</td>
+      <td width="30%" style="text-align:center;">CameraCtrl generated results.</td>
+    </tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </tbody></table>
+
+</div>
+</div>
+</div>
 </section>
 
 <!-- <section class="hero is-small">
   <div class="hero-body">
     <table class="center">
       <tbody><tr><td></td><td></td><td></td><td></td></tr>
+        s
       <tr>
         <td><video src="static/videos/carousel1.mp4" controls=""></video></td>
         <td><video src="static/videos/carousel1.mp4" controls=""></video></td>
